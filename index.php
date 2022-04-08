@@ -1,7 +1,7 @@
 <?php require_once 'inc/header.php' ?>
 
 <div class="card-header">
-    <h5>Doku Ackerstrasse 1973 <span>(<a href="https://de.wikipedia.org/wiki/Berlin-Milieu:_Ackerstra%C3%9Fe_1973">Wikipedia</a>
+    <h5>Doku Ackerstrasse 1973 <span>(<a target="_blank" href="https://de.wikipedia.org/wiki/Berlin-Milieu:_Ackerstra%C3%9Fe_1973">Wikipedia</a>
 )</span></h5>
 </div>
 <div class="card-body">
