@@ -4,3 +4,4 @@
 /.editorconfig
 /.htaccess
 /vendor
+/composer.lock

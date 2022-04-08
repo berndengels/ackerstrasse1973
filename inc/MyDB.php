@@ -23,7 +23,7 @@ class MyDB extends PDO
             // bei auftretenden fehlern exceptions ausgeben
             PDO::ATTR_ERRMODE               => PDO::ERRMODE_EXCEPTION,
         ];
-        parent::__construct($dsn, DB_USERNAME, DB_PASSWORD, $options);
+        parent::__construct($dsn, DB_USER, DB_PASSWORD, $options);
     }
 
     /**

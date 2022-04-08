@@ -1,5 +1,4 @@
                     <!-- here ends the content of the page -->
-                    </div>
                 </div>
             </div>
         </div>

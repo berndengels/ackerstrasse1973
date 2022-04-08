@@ -15,6 +15,22 @@ class Model extends MyDB {
         return $this->getOne($sql,[$id]);
     }
 
+    public function where(array $params)
+    {
+        $conditions = [];
+        foreach(array_keys($params) as $item) {
+            $conditions[] = "$item = :$item";
+        }
+        $strConditions = implode(' AND ', $conditions);
+        $sql = "SELECT * FROM $this->table WHERE $strConditions";
+
+        $data = $this->getAll($sql, $params);
+        if(count($data) === 1) {
+            return $data[0];
+        }
+        return $data;
+    }
+
     public function delete(int $id) {
         $sql = "DELETE FROM $this->table WHERE id= ?";
         return $this->prepareAndExecute($sql,[$id]);
