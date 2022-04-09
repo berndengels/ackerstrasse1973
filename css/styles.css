@@ -1,11 +1,65 @@
 body {
+	width: 100%;
+	height: 100vh;
+	padding: 0;
+	margin: 0;
 	color: #5a6268;
+	background-image: url("/img/ackerstrasse_w2000.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
+h1 {
+	background-color: transparent;
+	color: #fd7e14;
+	margin: 0;
+	padding: 0;
+}
+@media only screen and (max-width: 768px) {
+	body {
+		background: none;
+	}
+	h1 {
+		font-size: 2.0rem;
+	}
+	#video {
+		width: 100%;
+		background-color: transparent;
+	}
+	#video #videoWrapper,
+	#video #videoWrapper video {
+		width: 100%;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	/* For desktop: */
+	h1 {
+		margin-left: -6.0rem;
+		margin-top: 4.0rem;
+		padding: 0.5rem 1.0rem;
+		font-size: 3.0rem;
+	}
+
+	#videoWrapper {
+		box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+	}
+	#video {
+		position: absolute;
+		right: 6.0rem;
+		bottom: 1.0rem;
+		background-color: transparent;
+	}
+}
+
 .votes div {
+	display: inline-block;
 	width: 50px;
 	height: 50px;
 	cursor: pointer;
 	font-size: 0.7rem;
+	margin: 0;
+	float: left;
+	clear: none;
 }
 .votes div#up {
 	background-image: url(/img/vote-up.png);
@@ -16,7 +70,7 @@ body {
 }
 .votes div#up span {
 	position: relative;
-	top: 23px
+	top: 24px
 }
 .votes div#down {
 	background-image: url(/img/vote-down.png);
@@ -25,21 +79,23 @@ body {
 	color: #c00;
 	text-align: center;
 }
-
 .votes div#views {
+	position: relative;
+	right: 0;
 	width: auto;
+	font-size: 1.2rem;
+	margin-left: 4.0rem;
+	color: #fd7e14;
 	white-space: nowrap;
 	font-weight: normal;
 	line-height: 45px;
 }
 .votes div#down span {
 	position: relative;
-	top: 9px;
+	top: 10px;
 }
-
 .votes div#views span {
 	position: relative;
-	_left: 20px;
-	_top: 5px;
-	color: #005cbf;
+	font-size: 1.2rem;
+	color: #fd7e14;
 }

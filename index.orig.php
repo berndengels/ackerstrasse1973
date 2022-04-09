@@ -1,26 +1,27 @@
 <?php require_once 'inc/header.php' ?>
 
-<!--div class="row mt-5"-->
-    <h1>Doku Ackerstrasse 1973 <span>(<a target="_blank" href="https://de.wikipedia.org/wiki/Berlin-Milieu:_Ackerstra%C3%9Fe_1973">Wikipedia</a>)</span></h1>
-<!--/div-->
-<div id="video">
-    <div class="row votes">
-        <div id="up" class="" title="Gefällt mir">
-            <span></span>
-        </div>
-        <div id="down" class="ml-2" title="Gefällt mir nicht">
-            <span></span>
-        </div>
-        <div id="views" title="Visits">
-            Views: <span></span>
+<div class="card-header">
+    <h5>Doku Ackerstrasse 1973 <span>(<a target="_blank" href="https://de.wikipedia.org/wiki/Berlin-Milieu:_Ackerstra%C3%9Fe_1973">Wikipedia</a>)</span></h5>
+</div>
+<div class="card-body mt-3">
+    <div class="row">
+        <div class="col-sm-12 col-md-6 mt-sm-3 mt-md-0 float-right votes">
+            <div id="up" class="" title="Gefällt mir">
+                <span></span>
+            </div>
+            <div id="down" class="ml-2" title="Gefällt mir nicht">
+                <span></span>
+            </div>
+            <div id="views" class="ml-2" title="Visits">
+                Views: <span></span>
+            </div>
         </div>
     </div>
     <div class="row">
-        <div id="videoWrapper">
-            <video class="float-right" poster="/media/ackerstrasse1973.jpg" height="400" controls>
-                <source src="/media/ackerstrasse1973.mp4" type="video/mp4">
-            </video>
-        </div>
+        <div class="d-block h-75"><br /></div>
+        <video class="col-sm-12 col-md-6  position-relative" poster="/media/ackerstrasse1973.jpg" controls>
+            <source src="/media/ackerstrasse1973.mp4" type="video/mp4">
+        </video>
     </div>
 </div>
 
