@@ -1,32 +1,32 @@
 <?php require_once 'inc/header.php' ?>
-
-<div id="video" class="h-100">
-    <div class="row title">
-        <h1>Doku Ackerstra&szlig;e 1973</h1>
-    </div>
-    <div class="row subtitle">
-        <h3><a target="_blank" href="https://de.wikipedia.org/wiki/Berlin-Milieu:_Ackerstra%C3%9Fe_1973">> Wikipedia</a></h3>
-    </div>
-    <div class="row votes">
-        <div id="up" class="" title="Gefällt mir">
-            <span></span>
+<div id="outer">
+    <div id="video" class="h-100">
+        <div class="row title">
+            <h1>Doku Ackerstra&szlig;e 1973</h1>
         </div>
-        <div id="down" class="ml-2" title="Gefällt mir nicht">
-            <span></span>
+        <div class="row subtitle">
+            <h3><a target="_blank" href="https://de.wikipedia.org/wiki/Berlin-Milieu:_Ackerstra%C3%9Fe_1973">> Wikipedia</a></h3>
         </div>
-        <div id="views" title="Visits">
-            Views: <span></span>
+        <div class="row votes">
+            <div id="up" class="" title="Gefällt mir">
+                <span></span>
+            </div>
+            <div id="down" class="ml-2" title="Gefällt mir nicht">
+                <span></span>
+            </div>
+            <div id="views" title="Visits">
+                Views: <span></span>
+            </div>
         </div>
-    </div>
-    <div class="row video">
-        <div id="videoWrapper">
-            <video class="float-right" poster="/media/ackerstrasse1973.jpg" height="400" controls>
-                <source src="/media/ackerstrasse1973.mp4" type="video/mp4">
-            </video>
+        <div class="row video">
+            <div id="videoWrapper">
+                <video class="float-right" poster="/media/ackerstrasse1973.jpg" width="522" controls>
+                    <source src="/media/ackerstrasse1973.mp4" type="video/mp4">
+                </video>
+            </div>
         </div>
     </div>
 </div>
-
 <script>
 $(document).ready(function() {
 	var video = document.querySelector('video'),
