@@ -1,7 +1,7 @@
 <?php require_once 'inc/header.php' ?>
 
 <!--div class="row mt-5"-->
-    <h1>Doku Ackerstrasse 1973 <span>(<a target="_blank" href="https://de.wikipedia.org/wiki/Berlin-Milieu:_Ackerstra%C3%9Fe_1973">Wikipedia</a>)</span></h1>
+    <h1>Doku Ackerstra&szlig;e 1973<br><span><a target="_blank" href="https://de.wikipedia.org/wiki/Berlin-Milieu:_Ackerstra%C3%9Fe_1973">Wikipedia</a></span></h1>
 <!--/div-->
 <div id="video">
     <div class="row votes">
