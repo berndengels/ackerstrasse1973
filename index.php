@@ -1,9 +1,12 @@
 <?php require_once 'inc/header.php' ?>
 
-<!--div class="row mt-5"-->
-    <h1>Doku Ackerstra&szlig;e 1973<br><span><a target="_blank" href="https://de.wikipedia.org/wiki/Berlin-Milieu:_Ackerstra%C3%9Fe_1973">Wikipedia</a></span></h1>
-<!--/div-->
-<div id="video">
+<div id="video" class="h-100">
+    <div class="row title">
+        <h1>Doku Ackerstra&szlig;e 1973</h1>
+    </div>
+    <div class="row subtitle">
+        <h3><a target="_blank" href="https://de.wikipedia.org/wiki/Berlin-Milieu:_Ackerstra%C3%9Fe_1973">> Wikipedia</a></h3>
+    </div>
     <div class="row votes">
         <div id="up" class="" title="Gefällt mir">
             <span></span>
@@ -15,7 +18,7 @@
             Views: <span></span>
         </div>
     </div>
-    <div class="row">
+    <div class="row video">
         <div id="videoWrapper">
             <video class="float-right" poster="/media/ackerstrasse1973.jpg" height="400" controls>
                 <source src="/media/ackerstrasse1973.mp4" type="video/mp4">
