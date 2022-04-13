@@ -23,6 +23,7 @@ h1 {
 	margin: 0;
 	padding: 0;
 }
+
 @media only screen and (max-width: 768px) {
 	body {
 		background: none;
@@ -58,8 +59,8 @@ h1 {
 		right: 0;
 		bottom: 0;
 		background-color: rgba(50, 50, 50, 0.6);
-		z-index: 1;
 		width: 600px;
+		z-index: 1;
 	}
 	#videoContainer {
 		position: absolute;
@@ -95,9 +96,9 @@ h1 {
 		top: 0;
 		right: 0;
 		bottom: 0;
-		background-color: rgba(50, 50, 50, 0.6);
 		width: 1060px;
-		-webkit-clip-path: polygon(550px 0, 100% 0, 100% 100%, 300px 100%);
+		background-color: rgba(50, 50, 50, 0.6);
+		webkit-clip-path: polygon(550px 0, 100% 0, 100% 100%, 300px 100%);
 		clip-path: polygon(550px 0, 100% 0, 100% 100%, 300px 100%);
 		z-index: 1;
 	}
@@ -115,7 +116,29 @@ h1 {
 		bottom: 2.0rem;
 		z-index: 3;
 	}
+	video {
+		object-fit: cover;
+		z-index: 1001;
+	}
+	video:fullscreen {
+		z-index: 1001 !important;
+	}
 }
+@media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance:none) {
+	#outer {
+		position: absolute;
+		width: 600px;
+		height: 100vh;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		background-color: rgba(50, 50, 50, 0.6);
+		webkit-clip-path: none;
+		clip-path: none;
+		z-index: 1;
+	}
+}}
 .votes {
 	margin-top: 2.0rem;
 }

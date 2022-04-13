@@ -30,11 +30,15 @@
 </div>
 <script>
 	$(document).ready(function () {
-		var video = document.querySelector('video'),
-			$up = $('#up'),
-			$down = $('#down'),
+		let video = document.querySelector('video')
+			$up = $('#up')
+			$down = $('#down')
 			hasPlay = false
-		;
+
+        video.onfullscreenchange = e => {
+			console.info("zIndex", e.target.style)
+        }
+
 		$.get('/api/vote/values').done((resp) => {
 			$('#up span').text(resp.countUp);
 			$('#down span').text(resp.countDown);
